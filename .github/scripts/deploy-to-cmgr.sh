@@ -6,4 +6,4 @@ echo `pwd`
 git remote add cmgr https://$USERNAME:$PASSWORD@git.cloudmanager.adobe.com/aemsupport/cmgr-sync/
 
 # Git Push to Remote cmgr
-git push -u cmgr master
+git push -u cmgr main
