@@ -1,0 +1,16 @@
+name: Maven Build
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+      - name: Push to CMGR
+        run: ./.github/scripts/deploy-to-cmgr.sh
+        shell: bash
+        env:
+          USERNAME: ${{ secrets.CMGR_USER_NAME }}
+          PASSWORD: ${{ secrets.CMGR_USER_PWD }}
