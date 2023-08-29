@@ -1,6 +1,4 @@
 # Go Home
-cd ~
-
 # Print Current Location
 echo `pwd`
 
