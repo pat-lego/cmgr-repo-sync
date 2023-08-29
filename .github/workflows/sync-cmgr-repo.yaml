@@ -1,4 +1,4 @@
-name: Maven Build
+name: CMGR Sync
 on:
   push:
     branches:
